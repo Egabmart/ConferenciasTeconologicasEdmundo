@@ -1,0 +1,150 @@
+body {
+    background-color: rgb(239, 239, 239);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    width: 100%;
+    background-color: rgb(19, 163, 191);
+    padding: 5px;
+    position: sticky;
+    margin-bottom: 50px;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0;
+    margin-left: 30px;
+    list-style: none;
+}
+
+li {
+    display: flex;
+    margin: 10px 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+main {
+    text-align: center;
+}
+
+.eventos {
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+img {
+    width: 280px;
+    height: 280px;
+    padding: 50px;
+}
+
+.github {
+    width: 350px;
+    height: 280px;
+    padding: 50px;
+}
+
+.event-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    width: 350px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.event-card h3 {
+    font-weight: normal;
+}
+
+.event-card:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+}
+
+button {
+    background-color:rgb(19, 163, 191);
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+    color: white;
+    background-color:  rgb(9, 88, 104);
+
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+      font-size: 32px;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    li {
+      margin: 10px 0;
+    }
+  
+    .eventos {
+      flex-direction: column;
+      align-items: center;
+      margin: 10px;
+    }
+  
+    .event-card {
+      width: 90%;
+      padding: 10px;
+    }
+  
+    .github, img {
+      width: 100%;
+      max-width: 250px;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  }
+  
