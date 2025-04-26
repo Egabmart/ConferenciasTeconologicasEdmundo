@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Conferencia</title>
+    <meta name="author" content="Edmundo Martinez">
+    <meta name="description" content="Registro, conferencia, uam">
+    <link rel="stylesheet" href="./registroStyles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./eventos.html">Eventos</a></li>
+            <li><a href="#">Registro</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="titulo">
+            <h1>Registro</h1>
+        </div>
+        <div class="formulario">
+            <h2>Porfavor registre sus datos</h2>
+            <form id="formulario-registro" action="/procesar-datos" method="post">
+                <div class="entrada">
+                    <input type="text" id="nombres" name="nombres" required>
+                    <label for="nombres">Nombres</label>
+                </div>
+                <div class="entrada">
+                    <input type="text" id="apellidos" name="apellidos" required>
+                    <label for="apellidos">Apellidos</label>
+                </div>
+                <div class="entrada">
+                    <input type="text" id="correo" name="correo" required>
+                    <label for="correo">Correo Electronico</label>
+                </div>
+                <div class="entrada">
+                    <select id="carrera" name="carrera" required>
+                        <option value="" disabled selected hidden></option>
+                        <option value="sistemas">Ingenieria en Sistemas de Informacion</option>
+                        <option value="industrial">Ingenieria Industrial</option>
+                        <option value="civil">Ingenieria Civil</option>
+                        <option value="arquitectura">Arquitectura</option>
+                        <option value="administración">Administracion de Empresas</option>
+                        <option value="contabilidad-finanzas">Contabilidad y Finanzas</option>
+                        <option value="economia">Economia Empresarial</option>
+                        <option value="negocios">Negocios internacionales</option>
+                        <option value="derecho">Derecho</option>
+                        <option value="diplomacia">Diplomacia y Relaciones Internacionales</option>
+                        <option value="medicina">Medicina</option>
+                        <option value="psicologia">Psicologia</option>
+                        <option value="nutricion">Nutricion</option>
+                        <option value="marketing">Marketing y Publicidad</option>
+                        <option value="diseño">Diseño y Comunicacion Visual</option>
+                        <option value="comunicacion">Comunicacion y Relaciones Publicas</option>
+                        <option value="odontologia">Odontologia</option>
+                    </select>
+                    <label for="departamento">Carrera</label>
+                </div>
+                <div class="checklist">
+                    <p>Seleccioná a que conferencias quieres atender:</p>
+                    <label>
+                        <input type="checkbox" name="github" value="github">
+                        Uso de GitHub en proyectos colaborativos
+                      </label><br>
+                    
+                      <label>
+                        <input type="checkbox" name="docker" value="docker">
+                        Introducción a Docker para entornos de desarrollo
+                      </label><br>
+                    
+                      <label>
+                        <input type="checkbox" name="linux" value="linux">
+                        Configuración básica de servidores Linux    
+                      </label><br>
+                </div>
+                <input type="submit" value="Registrar">
+              </form>              
+        </div>
+        <div id="confirmacion">
+            
+        </div>
+    </main>
+    <footer>
+        <h6>2024 © Universidad Americana - UAM</h6>
+    </footer>
+    <script src="formulario-registro.js"></script>
+</body>
+</html>
